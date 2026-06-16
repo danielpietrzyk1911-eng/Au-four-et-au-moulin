@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Au Four et au Moulin — Bistrot · Saint-Maur-des-Fossés</title>
+<meta name="description" content="Au Four et au Moulin, bistrot de quartier à Saint-Maur-des-Fossés. Cuisine maison, produits de saison, terrasse. Formule déjeuner, carte à la table, cave & cocktails. Réservez votre table.">
+<meta name="theme-color" content="#171210">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Au Four et au Moulin — Bistrot à Saint-Maur-des-Fossés">
+<meta property="og:description" content="La cuisine de bistrot, sublimée. Fait maison, produits de saison, terrasse.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ============ SVG SPRITE (emblème + icônes) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="emblem" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="29.5" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <circle cx="32" cy="32" r="24.5" fill="none" stroke="currentColor" stroke-width=".7" opacity=".55"/>
+    <!-- épi de blé (le moulin) -->
+    <path d="M32 50 V25" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <g fill="currentColor">
+      <path d="M32 27 C35 23 35 18 32 14 C29 18 29 23 32 27 Z"/>
+      <path d="M32 31 C36 29.5 39 25.5 40 20.5 C36.5 22.5 33.5 25.5 32 30 Z"/>
+      <path d="M32 31 C28 29.5 25 25.5 24 20.5 C27.5 22.5 30.5 25.5 32 30 Z"/>
+      <path d="M32 37 C36 35.5 39 31.5 40 26.5 C36.5 28.5 33.5 31.5 32 36 Z"/>
+      <path d="M32 37 C28 35.5 25 31.5 24 26.5 C27.5 28.5 30.5 31.5 32 36 Z"/>
+      <path d="M32 43 C36 41.5 39 37.5 40 32.5 C36.5 34.5 33.5 37.5 32 42 Z"/>
+      <path d="M32 43 C28 41.5 25 37.5 24 32.5 C27.5 34.5 30.5 37.5 32 42 Z"/>
+    </g>
+    <!-- petite flamme (le four) -->
+    <path d="M32 53.5 C30 51.5 30 49.5 31 48 C31.2 49 31.8 49.3 32 49.5 C32.4 48.6 32.3 47.4 32 46.5 C34 47.5 35 49.5 34 51.5 C33.7 52.1 33 53 32 53.5 Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.95 5.98 6.6.96-4.77 4.65 1.12 6.57L12 17.52 6.1 20.66l1.13-6.57L2.45 9.44l6.6-.96z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 005.5 5.5l1.5-2 4 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 014.5 5.7 2 2 0 016.5 3.5z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M14.5 8.5h2.2M14.5 8.5c0-2 .6-3 2.5-3M14.5 8.5v12M11 12h6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-fork" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M7 3v6a2 2 0 004 0V3M9 11v10M16 3c-1.5 0-2.5 2-2.5 5s1 4 2.5 4v9"/></symbol>
+</svg>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="nav" id="top" data-nav>
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Au Four et au Moulin — accueil">
+      <span class="brand__mark">
+        <svg class="brand__emblem" aria-hidden="true"><use href="#emblem"/></svg>
+        <span class="brand__text">
+          <span class="brand__line1">Au Four</span>
+          <span class="brand__line2">et au Moulin</span>
+        </span>
+      </span>
+      <img class="brand__logo" src="assets/img/logo.webp" alt="" aria-hidden="true">
+    </a>
+
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#maison">La Maison</a>
+      <a href="#incontournables">Spécialités</a>
+      <a href="#carte">La Carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#infos">Infos</a>
+    </nav>
+
+    <div class="nav__actions">
+      <!-- TODO: remplacer par l'URL TheFork réelle du restaurant -->
+      <a class="btn btn--solid btn--sm js-resa" href="https://www.thefork.fr/" target="_blank" rel="noopener">Réserver</a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile plein écran -->
+<div class="mobilemenu" id="menu-mobile" data-mobile-menu>
+  <nav class="mobilemenu__nav" aria-label="Navigation mobile">
+    <a href="#maison">La Maison</a>
+    <a href="#incontournables">Spécialités</a>
+    <a href="#carte">La Carte</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#infos">Infos &amp; Réservation</a>
+  </nav>
+  <a class="btn btn--solid js-resa" href="https://www.thefork.fr/" target="_blank" rel="noopener">Réserver une table</a>
+  <a class="mobilemenu__tel" href="tel:+33659594099">06 59 59 40 99</a>
+</div>
+
+<main id="contenu">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="accueil">
+    <div class="hero__media">
+      <img src="assets/img/hero.jpg" alt="Table dressée au bistrot Au Four et au Moulin, assiette et verres à la lueur des bougies" fetchpriority="high">
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="hero__content" data-stagger>
+      <p class="kicker kicker--light" data-reveal>Bistrot &middot; Saint-Maur-des-Fossés</p>
+      <h1 class="hero__title" data-reveal>
+        <span>Au Four</span>
+        <span class="is-italic">et au Moulin</span>
+      </h1>
+      <p class="hero__tagline" data-reveal>La cuisine de bistrot, sublimée. Produits de saison, fait&nbsp;maison, et l'esprit convivial d'une table où l'on revient.</p>
+      <div class="hero__cta" data-reveal>
+        <a class="btn btn--solid js-resa" href="https://www.thefork.fr/" target="_blank" rel="noopener">Réserver une table</a>
+        <a class="btn btn--ghost" href="#carte">Découvrir la carte</a>
+      </div>
+      <div class="hero__meta" data-reveal>
+        <span class="hero__rating">
+          <svg class="star" aria-hidden="true"><use href="#i-star"/></svg>
+          <strong>4,6</strong> &middot; 254 avis Google
+        </span>
+        <span class="hero__dot" aria-hidden="true"></span>
+        <span>Midi &amp; soir, du mardi au samedi</span>
+      </div>
+    </div>
+    <a href="#maison" class="hero__scroll" aria-label="Faire défiler vers le bas">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Fait maison</span><span class="marquee__dot"></span>
+      <span>Produits de saison</span><span class="marquee__dot"></span>
+      <span>Ardoise du jour</span><span class="marquee__dot"></span>
+      <span>Terrasse</span><span class="marquee__dot"></span>
+      <span>Cave &amp; cocktails</span><span class="marquee__dot"></span>
+      <span>Cuisine de marché</span><span class="marquee__dot"></span>
+      <span>Fait maison</span><span class="marquee__dot"></span>
+      <span>Produits de saison</span><span class="marquee__dot"></span>
+      <span>Ardoise du jour</span><span class="marquee__dot"></span>
+      <span>Terrasse</span><span class="marquee__dot"></span>
+      <span>Cave &amp; cocktails</span><span class="marquee__dot"></span>
+      <span>Cuisine de marché</span><span class="marquee__dot"></span>
+    </div>
+  </div>
+
+  <!-- ============ LA MAISON ============ -->
+  <section class="section maison" id="maison">
+    <div class="container maison__grid">
+      <div class="maison__text" data-stagger>
+        <p class="kicker" data-reveal>La Maison</p>
+        <h2 class="h2" data-reveal>Une table de quartier,<br><span class="is-italic">généreuse et sincère.</span></h2>
+        <p data-reveal>Au cœur du Vieux Saint-Maur, <strong>Au Four et au Moulin</strong> cultive l'art du bistrot : une cuisine franche, des produits choisis avec soin et une ardoise qui change au gré du marché. Ici, on mijote, on saisit, on partage.</p>
+        <p data-reveal>De la planche de charcuterie « en attendant les copains » à la noix d'entrecôte Salers-Angus, tout est préparé maison — jusqu'à la dernière cuillerée de caramel beurre salé. Aux beaux jours, la terrasse de la rue du Four prolonge le plaisir.</p>
+        <div class="stats" data-reveal data-stagger>
+          <div class="stat" data-reveal>
+            <span class="stat__num" data-count="4.6" data-decimals="1">0</span>
+            <span class="stat__label">Note Google</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__num" data-count="254" data-suffix="+">0</span>
+            <span class="stat__label">Avis clients</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__num">30–40&nbsp;€</span>
+            <span class="stat__label">Par personne</span>
+          </div>
+        </div>
+      </div>
+      <div class="maison__media" data-reveal>
+        <div class="framed">
+          <img src="assets/img/interior-1.webp" alt="La salle du bistrot Au Four et au Moulin, tables en bois et banquettes sous les poutres" loading="lazy" decoding="async">
+          <div class="framed__badge">
+            <svg aria-hidden="true"><use href="#emblem"/></svg>
+            <span>Tout est<br>fait maison</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INCONTOURNABLES ============ -->
+  <section class="section specialites" id="incontournables">
+    <div class="container">
+      <div class="section__head" data-stagger>
+        <p class="kicker" data-reveal>À déguster</p>
+        <h2 class="h2" data-reveal>Nos <span class="is-italic">incontournables</span></h2>
+        <p class="section__lead" data-reveal>Quelques signatures de la maison — celles que l'on commande les yeux fermés.</p>
+      </div>
+      <div class="dishes" data-stagger>
+        <article class="dish" data-reveal>
+          <div class="dish__media"><img src="assets/img/plat-ris-de-veau.webp" alt="Ris de veau aux morilles et purée maison" loading="lazy" decoding="async"></div>
+          <div class="dish__body">
+            <div class="dish__top"><h3>Ris de veau aux morilles</h3><span class="dish__price">34&nbsp;€</span></div>
+            <p>Rissolés, sauce crémée aux morilles et purée maison au beurre.</p>
+          </div>
+        </article>
+        <article class="dish" data-reveal>
+          <div class="dish__media"><img src="assets/img/plat-tartare.webp" alt="Tartare de bœuf préparé minute, pain et vin" loading="lazy" decoding="async"></div>
+          <div class="dish__body">
+            <div class="dish__top"><h3>Tartare de bœuf préparé minute</h3><span class="dish__price">19&nbsp;€</span></div>
+            <p>Au couteau, condiments, huile d'olive et frites maison.</p>
+          </div>
+        </article>
+        <article class="dish" data-reveal>
+          <div class="dish__media"><img src="assets/img/plat-burrata.webp" alt="Burrata crémeuse, tomates et réduction balsamique" loading="lazy" decoding="async"></div>
+          <div class="dish__body">
+            <div class="dish__top"><h3>Burrata, tomates &amp; balsamique</h3><span class="dish__price">Entrée</span></div>
+            <p>Crémeuse à souhait, tomates de saison, réduction balsamique et basilic.</p>
+          </div>
+        </article>
+        <article class="dish" data-reveal>
+          <div class="dish__media"><img src="assets/img/plat-profiteroles.webp" alt="Grosse profiterole nappée de sauce chocolat Valrhona" loading="lazy" decoding="async"></div>
+          <div class="dish__body">
+            <div class="dish__top"><h3>Grosse profiterole, sauce Valrhona</h3><span class="dish__price">12&nbsp;€</span></div>
+            <p>Chou garni de glace vanille, nappé de chocolat chaud Valrhona.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANDEAU CITATION ============ -->
+  <section class="quote" id="quote">
+    <div class="quote__media" data-parallax>
+      <img src="assets/img/interior-2.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+      <div class="quote__scrim"></div>
+    </div>
+    <blockquote class="quote__content">
+      <svg class="quote__emblem" aria-hidden="true"><use href="#emblem"/></svg>
+      <p data-reveal>« Ici, tout est fait maison — du pain partagé à la dernière cuillerée de caramel. »</p>
+      <cite data-reveal>— La maison</cite>
+      <a class="btn btn--ghost btn--light js-resa" href="https://www.thefork.fr/" target="_blank" rel="noopener" data-reveal>Réserver votre table</a>
+    </blockquote>
+  </section>
+
+  <!-- ============ HERO À DÉFILEMENT (clip-path reveal, inspiré de SmoothScrollHero) ============ -->
+  <section class="scrollhero" data-scrollhero aria-label="Bienvenue au bistrot">
+    <div class="scrollhero__sticky">
+      <div class="scrollhero__clip" data-scrollhero-frame>
+        <img class="scrollhero__img" data-scrollhero-bg src="assets/img/terrasse.jpg" alt="La terrasse du restaurant Au Four et au Moulin, sous l'auvent rouge">
+      </div>
+      <div class="scrollhero__inner">
+        <p class="kicker kicker--light">Bienvenue</p>
+        <p class="scrollhero__line">Poussez la porte,<br><span class="is-italic">installez-vous.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA CARTE ============ -->
+  <section class="section carte" id="carte">
+    <div class="container">
+      <div class="section__head" data-stagger>
+        <p class="kicker" data-reveal>À la carte</p>
+        <h2 class="h2" data-reveal>La <span class="is-italic">Carte</span></h2>
+        <p class="section__lead" data-reveal>Carte évolutive au gré du marché — pensez à l'ardoise du jour. Prix nets, service compris.</p>
+      </div>
+
+      <div class="tabs" data-tabs>
+        <div class="tabs__list" role="tablist" aria-label="Sections de la carte">
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-midi" id="tab-midi">Le Midi</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-entrees" id="tab-entrees" tabindex="-1">Entrées</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-plats" id="tab-plats" tabindex="-1">Plats</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-desserts" id="tab-desserts" tabindex="-1">Desserts</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-boissons" id="tab-boissons" tabindex="-1">Boissons</button>
+        </div>
+
+        <!-- LE MIDI -->
+        <div class="tabs__panel is-active" role="tabpanel" id="panel-midi" aria-labelledby="tab-midi" tabindex="0">
+          <div class="formule" data-reveal>
+            <div class="formule__head">
+              <h3>Formule Déjeuner</h3>
+              <span class="formule__note">du mardi au vendredi, le midi</span>
+            </div>
+            <ul class="formule__list">
+              <li><span>Entrée + Plat + Dessert <em>· café offert</em></span><span class="price">25&nbsp;€</span></li>
+              <li><span>Entrée + Plat, ou Plat + Dessert</span><span class="price">20&nbsp;€</span></li>
+            </ul>
+          </div>
+          <div class="menu-cols">
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Le marché du jour</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Gaspacho concombre, petits pois à la menthe</span><span class="menu-item__price">7</span></li>
+                <li class="menu-item"><span class="menu-item__name">Porchetta aux herbes, légumes rôtis</span><span class="menu-item__price">16</span></li>
+                <li class="menu-item"><span class="menu-item__name">Soupe de fraises au basilic</span><span class="menu-item__price">7</span></li>
+              </ul>
+            </div>
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Menu Enfant</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Saucisse &amp; purée maison</span><span class="menu-item__price">—</span></li>
+                <li class="menu-item"><span class="menu-item__name">Une boule de glace</span><span class="menu-item__price">—</span></li>
+              </ul>
+              <p class="menu-foot">Ardoise renouvelée chaque semaine selon l'arrivage.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENTRÉES -->
+        <div class="tabs__panel" role="tabpanel" id="panel-entrees" aria-labelledby="tab-entrees" tabindex="0" hidden>
+          <div class="menu-cols">
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Entrées</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Œufs cocotte à la crème de Reblochon</span><span class="menu-item__price">9</span></li>
+                <li class="menu-item"><span class="menu-item__name">Carotte râpée, vinaigrette à la noisette</span><span class="menu-item__price">9</span></li>
+                <li class="menu-item"><span class="menu-item__name">Velouté petits pois &amp; lait de coco, crouton à l'ail</span><span class="menu-item__price">11</span></li>
+                <li class="menu-item"><span class="menu-item__name">Ravioles du Dauphiné, parmesan &amp; piment d'Espelette</span><span class="menu-item__price">12</span></li>
+                <li class="menu-item"><span class="menu-item__name">Os à moelle à la fleur de sel</span><span class="menu-item__price">16</span></li>
+                <li class="menu-item"><span class="menu-item__name">Toast de saumon fumé &amp; crème citronnée</span><span class="menu-item__price">18</span></li>
+              </ul>
+            </div>
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">En attendant les copains <span>· à partager</span></h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">L'assiette de Rosette</span><span class="menu-item__price">10</span></li>
+                <li class="menu-item"><span class="menu-item__name">Rillettes d'oie &amp; cornichons</span><span class="menu-item__price">10</span></li>
+                <li class="menu-item"><span class="menu-item__name">Planche mixte charcuteries &amp; fromages</span><span class="menu-item__price">20</span></li>
+              </ul>
+              <p class="menu-foot">L'apéro se prolonge volontiers en terrasse, un verre à la main.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLATS -->
+        <div class="tabs__panel" role="tabpanel" id="panel-plats" aria-labelledby="tab-plats" tabindex="0" hidden>
+          <div class="menu-cols">
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Viandes</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Tartare de bœuf préparé minute</span><span class="menu-item__price">19</span></li>
+                <li class="menu-item"><span class="menu-item__name">Cheeseburger maison <em>· supp. bacon +1</em></span><span class="menu-item__price">20</span></li>
+                <li class="menu-item"><span class="menu-item__name">Pièce du boucher, beurre au thym</span><span class="menu-item__price">24</span></li>
+                <li class="menu-item"><span class="menu-item__name">Tranche de foie de veau poêlée, réduction balsamique</span><span class="menu-item__price">24</span></li>
+                <li class="menu-item"><span class="menu-item__name">Côtelettes d'agneau grillées au romarin, jus corsé</span><span class="menu-item__price">28</span></li>
+                <li class="menu-item"><span class="menu-item__name">Noix d'entrecôte Salers-Angus <em>· ≈300&nbsp;g</em></span><span class="menu-item__price">35</span></li>
+                <li class="menu-item"><span class="menu-item__name">Ris de veau aux morilles, purée maison</span><span class="menu-item__price">34</span></li>
+              </ul>
+            </div>
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Poissons</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Filet de daurade, sauce vierge</span><span class="menu-item__price">23</span></li>
+                <li class="menu-item"><span class="menu-item__name">Fish &amp; chips façon Frère &amp; Sœur, mayo wasabi</span><span class="menu-item__price">23</span></li>
+                <li class="menu-item"><span class="menu-item__name">Mi-cuit de saumon, crème d'aneth</span><span class="menu-item__price">24</span></li>
+                <li class="menu-item"><span class="menu-item__name">Haddock JC-David &amp; œuf poché, beurre blanc</span><span class="menu-item__price">28</span></li>
+              </ul>
+              <h4 class="menu-group__title menu-group__title--mt">Végétarien</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Risotto aux champignons, huile de truffe blanche</span><span class="menu-item__price">20</span></li>
+              </ul>
+              <p class="menu-foot">Accompagnements maison : frites, purée, légumes vapeur, riz ou salade — suppl. 2,5&nbsp;€.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="tabs__panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" tabindex="0" hidden>
+          <div class="menu-cols">
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Desserts maison</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Pomme confite au caramel beurre salé</span><span class="menu-item__price">9</span></li>
+                <li class="menu-item"><span class="menu-item__name">Cookie cuit minute &amp; boule de glace</span><span class="menu-item__price">10</span></li>
+                <li class="menu-item"><span class="menu-item__name">Café ou thé gourmand</span><span class="menu-item__price">9</span></li>
+                <li class="menu-item"><span class="menu-item__name">Poires pochées au chocolat</span><span class="menu-item__price">11</span></li>
+              </ul>
+            </div>
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Les gourmandises</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Grosse profiterole, sauce chocolat Valrhona</span><span class="menu-item__price">12</span></li>
+                <li class="menu-item"><span class="menu-item__name">Riz au lait, caramel &amp; noisettes torréfiées</span><span class="menu-item__price">9</span></li>
+                <li class="menu-item"><span class="menu-item__name">Glaces &amp; sorbets de chez Enzo &amp; Lily <em>· 1, 2 ou 3 boules</em></span><span class="menu-item__price">4</span></li>
+              </ul>
+              <p class="menu-foot">Une envie sucrée ? Demandez la suggestion du chef.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOISSONS -->
+        <div class="tabs__panel" role="tabpanel" id="panel-boissons" aria-labelledby="tab-boissons" tabindex="0" hidden>
+          <div class="menu-cols">
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Cocktails</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Spritz <em>· Aperol / Campari / St-Germain</em></span><span class="menu-item__price">11</span></li>
+                <li class="menu-item"><span class="menu-item__name">Gin Tonic · Moscow Mule · Mojito</span><span class="menu-item__price">12</span></li>
+                <li class="menu-item"><span class="menu-item__name">Margarita · Pina Colada · Bloody Mary</span><span class="menu-item__price">12</span></li>
+                <li class="menu-item"><span class="menu-item__name">Prohibition <em>· sans alcool</em></span><span class="menu-item__price">8</span></li>
+              </ul>
+              <h4 class="menu-group__title menu-group__title--mt">Bières artisanales BapBap</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Le Demi (25 cl)</span><span class="menu-item__price">8</span></li>
+                <li class="menu-item"><span class="menu-item__name">La Pinte (50 cl)</span><span class="menu-item__price">10</span></li>
+              </ul>
+            </div>
+            <div class="menu-group" data-reveal>
+              <h4 class="menu-group__title">Vins &amp; bulles</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Coupe de Champagne</span><span class="menu-item__price">14</span></li>
+                <li class="menu-item"><span class="menu-item__name">Verre de vin <em>· sélection du moment</em></span><span class="menu-item__price">dès 6</span></li>
+                <li class="menu-item"><span class="menu-item__name">Apéritifs · Pastis, Kir, Martini, Suze, Porto</span><span class="menu-item__price">dès 6</span></li>
+              </ul>
+              <h4 class="menu-group__title menu-group__title--mt">Boissons chaudes &amp; softs</h4>
+              <ul class="menu-list">
+                <li class="menu-item"><span class="menu-item__name">Café · Décaféiné</span><span class="menu-item__price">2,5</span></li>
+                <li class="menu-item"><span class="menu-item__name">Cappuccino · Café crème</span><span class="menu-item__price">5</span></li>
+                <li class="menu-item"><span class="menu-item__name">Sodas · Jus de fruits artisanaux</span><span class="menu-item__price">5</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIE ============ -->
+  <section class="section galerie" id="galerie">
+    <div class="container">
+      <div class="section__head" data-stagger>
+        <p class="kicker" data-reveal>En images</p>
+        <h2 class="h2" data-reveal>L'ambiance &amp; <span class="is-italic">les assiettes</span></h2>
+      </div>
+    </div>
+    <div class="gallery" data-stagger>
+      <button class="gallery__item gallery__item--tall" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/terrasse.jpg" alt="Terrasse du restaurant, parasols et tables sur le trottoir" loading="lazy" decoding="async">
+        <span class="gallery__cap">Notre terrasse</span>
+      </button>
+      <button class="gallery__item" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/interior-1.webp" alt="Salle du bistrot, tables dressées et banquettes" loading="lazy" decoding="async">
+        <span class="gallery__cap">La salle</span>
+      </button>
+      <button class="gallery__item" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/dessert-framboises.webp" alt="Tarte aux framboises et menthe fraîche" loading="lazy" decoding="async">
+        <span class="gallery__cap">Tartes maison</span>
+      </button>
+      <button class="gallery__item gallery__item--wide" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/interior-2.jpg" alt="Salle et cave à vins du restaurant" loading="lazy" decoding="async">
+        <span class="gallery__cap">L'ambiance</span>
+      </button>
+      <button class="gallery__item" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/padron.webp" alt="Pimientos de Padrón grillés" loading="lazy" decoding="async">
+        <span class="gallery__cap">À grignoter</span>
+      </button>
+      <button class="gallery__item" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/truffes.webp" alt="Truffes noires de saison" loading="lazy" decoding="async">
+        <span class="gallery__cap">Produits de saison</span>
+      </button>
+      <button class="gallery__item gallery__item--tall" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/service-plats.webp" alt="Service de plusieurs plats en salle" loading="lazy" decoding="async">
+        <span class="gallery__cap">En salle</span>
+      </button>
+      <button class="gallery__item" data-reveal data-lightbox aria-label="Agrandir l'image">
+        <img src="assets/img/spread-asperges.webp" alt="Entrées du marché : asperges blanches, velouté et ceviche" loading="lazy" decoding="async">
+        <span class="gallery__cap">Entrées du marché</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section class="section avis">
+    <div class="container">
+      <div class="section__head" data-stagger>
+        <p class="kicker" data-reveal>Ils en parlent</p>
+        <h2 class="h2" data-reveal><span class="is-italic">4,6&nbsp;★</span> sur 254 avis</h2>
+        <p class="section__lead" data-reveal>Ce que disent les habitués — et ceux qui le deviennent.</p>
+      </div>
+      <div class="reviews" data-stagger>
+        <figure class="review" data-reveal>
+          <div class="review__stars" aria-label="5 sur 5">
+            <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+          </div>
+          <blockquote>« Quelle cuisine ! Exceptionnelle, goûteuse, généreuse en fraîcheur… incroyable. Le service tout aussi parfait, avec beaucoup de bienveillance. J'y retourne toujours avec grand plaisir. »</blockquote>
+          <figcaption><span class="review__name">Mirjana Terzic</span><span class="review__src">Avis Google · Local Guide</span></figcaption>
+        </figure>
+        <figure class="review" data-reveal>
+          <div class="review__stars" aria-label="5 sur 5">
+            <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+          </div>
+          <blockquote>« Tous les plats et desserts étaient délicieux, et le vin très bon à un prix honnête. Cela nous réconcilie avec les restaurants. Je reviendrai ! »</blockquote>
+          <figcaption><span class="review__name">Fred&nbsp;&amp;&nbsp;Sylvaine</span><span class="review__src">Avis Google · Local Guide</span></figcaption>
+        </figure>
+        <figure class="review" data-reveal>
+          <div class="review__stars" aria-label="5 sur 5">
+            <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+          </div>
+          <blockquote>« Excellente expérience du début à la fin ! Des produits frais, parfaitement cuisinés, et une vraie passion qui se ressent dans l'assiette comme dans le service. Bravo à la nouvelle équipe ! »</blockquote>
+          <figcaption><span class="review__name">Morgane Allexandre</span><span class="review__src">Avis Google · Local Guide</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFOS & RÉSERVATION ============ -->
+  <section class="section infos" id="infos">
+    <div class="container infos__grid">
+      <div class="infos__col" data-reveal>
+        <p class="kicker">Nous trouver</p>
+        <h2 class="h2">Infos &amp; <span class="is-italic">réservation</span></h2>
+
+        <ul class="infos__list">
+          <li>
+            <svg aria-hidden="true"><use href="#i-pin"/></svg>
+            <div>
+              <span class="infos__label">Adresse</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Au+Four+et+au+Moulin+34+Rue+du+Four+94100+Saint-Maur-des-Foss%C3%A9s" target="_blank" rel="noopener">34 Rue du Four, 94100 Saint-Maur-des-Fossés</a>
+            </div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
+            <div>
+              <span class="infos__label">Téléphone</span>
+              <a href="tel:+33659594099">06 59 59 40 99</a>
+            </div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-clock"/></svg>
+            <div>
+              <span class="infos__label">Horaires</span>
+              <table class="hours">
+                <tr><th>Mardi – Vendredi</th><td>12h–14h30 &middot; 19h–22h30</td></tr>
+                <tr><th>Samedi</th><td>12h–14h30 &middot; 19h30–22h30</td></tr>
+                <tr class="hours__closed"><th>Dimanche &amp; Lundi</th><td>Fermé</td></tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">Terrasse</span>
+          <span class="tag">Wi-Fi</span>
+          <span class="tag">Menu enfant</span>
+        </div>
+      </div>
+
+      <div class="infos__side">
+        <div class="resa-card" data-reveal>
+          <h3>Réservez votre table</h3>
+          <p>En ligne en quelques secondes, ou par téléphone. Les groupes et la terrasse sont les bienvenus.</p>
+          <a class="btn btn--solid btn--block js-resa" href="https://www.thefork.fr/" target="_blank" rel="noopener">
+            <svg class="btn__ico" aria-hidden="true"><use href="#i-fork"/></svg> Réserver sur TheFork
+          </a>
+          <a class="btn btn--outline btn--block" href="tel:+33659594099">
+            <svg class="btn__ico" aria-hidden="true"><use href="#i-phone"/></svg> Appeler le 06 59 59 40 99
+          </a>
+          <p class="resa-card__note">Service midi &amp; soir, du mardi au samedi.</p>
+        </div>
+        <div class="map" data-reveal>
+          <iframe
+            title="Carte de localisation du restaurant à Saint-Maur-des-Fossés"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=2.4790%2C48.7920%2C2.5060%2C48.8060&amp;layer=mapnik&amp;marker=48.7990%2C2.4925"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="#top" aria-label="Au Four et au Moulin — accueil">
+        <svg class="brand__emblem" aria-hidden="true"><use href="#emblem"/></svg>
+        <span class="brand__text">
+          <span class="brand__line1">Au Four</span>
+          <span class="brand__line2">et au Moulin</span>
+        </span>
+      </a>
+      <p class="footer__baseline">Bistrot de quartier — cuisine maison, produits de saison, à Saint-Maur-des-Fossés.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/aufour_etaumoulin_/" target="_blank" rel="noopener" aria-label="Instagram @aufour_etaumoulin_"><svg aria-hidden="true"><use href="#i-insta"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      </div>
+    </div>
+
+    <nav class="footer__nav" aria-label="Pied de page">
+      <h4>Visiter</h4>
+      <a href="#maison">La Maison</a>
+      <a href="#incontournables">Spécialités</a>
+      <a href="#carte">La Carte</a>
+      <a href="#galerie">Galerie</a>
+    </nav>
+
+    <div class="footer__contact">
+      <h4>Nous trouver</h4>
+      <p>34 Rue du Four<br>94100 Saint-Maur-des-Fossés</p>
+      <p><a href="tel:+33659594099">06 59 59 40 99</a></p>
+      <p class="footer__hours">Mar–Sam · midi &amp; soir<br>Dim &amp; Lun · fermé</p>
+    </div>
+
+    <div class="footer__cta">
+      <h4>Une table vous attend</h4>
+      <a class="btn btn--solid btn--block js-resa" href="https://www.thefork.fr/" target="_blank" rel="noopener">Réserver</a>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p>© <span data-year>2026</span> Au Four et au Moulin — Tous droits réservés.</p>
+    <p class="footer__credit">Photographies d'illustration · Démonstration de site</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" data-lightbox-modal>
+  <button class="lightbox__close" aria-label="Fermer">&times;</button>
+  <img class="lightbox__img" src="" alt="">
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
